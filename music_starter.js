@@ -49,6 +49,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   strokeWeight(0);
   rect(360, 390, 720, 200); // Draws the grass
 
+  
   if(firstRun){
 img = loadImage('Animation.gif') // my frame by frame animation
 
