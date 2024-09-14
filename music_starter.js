@@ -1,10 +1,11 @@
 let img;
 let firstRun = true
+
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
-  background(173, 113, 199) // purple
+  background(84, 63, 92) // purple
   textFont('Verdana'); // please use CSS safe fonts
-  rectMode(CENTER)
+  rectMode(CENTER, BOTTOM)
   textSize(24);
 
   let stars = map(drum, 0, 100, 10, 2) // Creates stars that change sizes based on the 'drum' data
@@ -24,7 +25,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
   
   let skyLine = map(bass, 0, 100, 150, 250)
-  fill(227, 104, 133); // pink
+  fill(128, 47, 83); // magenta
   strokeWeight(0);
   rect(360,240,720,skyLine); // changes the size of the sunset/skyline based on the 'bass' data
   
@@ -48,13 +49,20 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   strokeWeight(0);
   rect(360, 390, 720, 200); // Draws the grass
 
-
-}
-
-function draw_one_frame(words, vocal, drum, bass, other, counter) {
   if(firstRun){
-    img = LoadImage('')
-  }
+img = loadImage('Animation.gif') // my frame by frame animation
+
+  firstRun = false
+ }
+
+image(img,0,0)
+
+fill(255, 140, 33)
+textFont('Brush Script MT')
+textAlign(CENTER, BOTTOM);
+textSize(70);
+text(words, width/2, height/3)
+
 }
 //    rect(bar_pos_x, height / 2 + 2 * bar_spacing, 4 * drum, bar_height);
 //    fill(0);
