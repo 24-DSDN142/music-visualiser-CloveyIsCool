@@ -58,11 +58,11 @@ img = loadImage('Animation.gif') // my frame by frame animation
 
 image(img,0,0)
 
-fill(255, 140, 33)
+fill(255, 140, 33); // Orange
 textFont('Brush Script MT')
 textAlign(CENTER, BOTTOM);
 textSize(70);
-text(words, width/2, height/3)
+text(words, width/2, height/3) // Displays lyrics based on 'words'
 
 }
 //    rect(bar_pos_x, height / 2 + 2 * bar_spacing, 4 * drum, bar_height);
