@@ -3,7 +3,7 @@ let firstRun = true
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
-  background(84, 63, 92) // purple
+  background(38, 79, 82) // dark cyan
   textFont('Verdana'); // please use CSS safe fonts
   rectMode(CENTER, BOTTOM)
   textSize(24);
@@ -25,7 +25,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
   
   let skyLine = map(bass, 0, 100, 150, 250)
-  fill(128, 47, 83); // magenta
+  fill(70, 158, 142); // cyan
   strokeWeight(0);
   rect(360,240,720,skyLine); // changes the size of the sunset/skyline based on the 'bass' data
   
@@ -45,22 +45,22 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   ellipse(360, 125, 70, 70); // Draws the moon
 
 
-  fill(48, 54, 47); // Dark green
+  fill(22, 41, 22); // Dark green
   strokeWeight(0);
   rect(360, 390, 720, 200); // Draws the grass
 
   
   if(firstRun){
-img = loadImage('Animation.gif') // my frame by frame animation
+img = loadImage('FinalAnimation.gif') // my frame by frame animation
 
   firstRun = false
  }
 
 image(img,0,0)
 
-fill(255, 140, 33); // Orange
-textFont('Brush Script MT')
-textAlign(CENTER, BOTTOM);
+fill(140, 14, 23); // Red
+textFont('Luminari')
+textAlign(RIGHT, BASELINE);
 textSize(70);
 text(words, width/2, height/3) // Displays lyrics based on 'words'
 
