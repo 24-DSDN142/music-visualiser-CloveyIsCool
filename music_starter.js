@@ -65,25 +65,3 @@ textSize(70);
 text(words, width/2, height/3) // Displays lyrics based on 'words'
 
 }
-//    rect(bar_pos_x, height / 2 + 2 * bar_spacing, 4 * drum, bar_height);
-//    fill(0);
-//    text("drums", bar_pos_x, height / 2 + 2 * bar_spacing + 8);
- 
-//    // bass bar is blue
-//    fill(50, 50, 240);
-//    rect(bar_pos_x, height / 2 + 3 * bar_spacing, 4 * bass, bar_height);
-//    fill(0);
-//    text("bass", bar_pos_x, height / 2 + 3 * bar_spacing + 8);
- 
-//    // other bar is white
-//    fill(200, 200, 200);
-//    rect(bar_pos_x, height / 2 + 4 * bar_spacing, 4 * other, bar_height);
-//    fill(0);
-//    text("other", bar_pos_x, height / 2 + 4 * bar_spacing + 8);
-//    fill(255, 255, 0);
- 
-//    // display "words"
-//    textAlign(CENTER);
-//    textSize(vocal);
-//    text(words, width/2, height/3);
-// 
